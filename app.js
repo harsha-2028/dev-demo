@@ -55,9 +55,9 @@ const sessionOption = {
         httpOnly : true,
     },
 };
-// app.get("/",(req,res)=>{
-//     res.send("Root Directory !");
-// });
+app.get("/",(req,res)=>{
+    res.redirect("/listing");
+});
 
 
 app.use(session(sessionOption));
